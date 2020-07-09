@@ -21,10 +21,10 @@
         <Entry Type="IsDirectQuery" Value="l0"/>
         <Entry Type="ResultType" Value="sTable"/>
         <Entry Type="BufferNextRefresh" Value="l1"/>
-        <Entry Type="FillColumnNames" Value="s[&quot;ID&quot;,&quot;Nome&quot;,&quot;Idade&quot;]"/>
         <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:3,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[],&quot;columnIdentities&quot;:[&quot;Server.Database\\/2/SQL/dell-i15-a30s;TST_PBI/dbo/Pessoas.{ID,0}&quot;,&quot;Server.Database\\/2/SQL/dell-i15-a30s;TST_PBI/dbo/Pessoas.{Nome,1}&quot;,&quot;Server.Database\\/2/SQL/dell-i15-a30s;TST_PBI/dbo/Pessoas.{Idade,2}&quot;],&quot;ColumnCount&quot;:3,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Server.Database\\/2/SQL/dell-i15-a30s;TST_PBI/dbo/Pessoas.{ID,0}&quot;,&quot;Server.Database\\/2/SQL/dell-i15-a30s;TST_PBI/dbo/Pessoas.{Nome,1}&quot;,&quot;Server.Database\\/2/SQL/dell-i15-a30s;TST_PBI/dbo/Pessoas.{Idade,2}&quot;],&quot;RelationshipInfo&quot;:[]}"/>
-        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Fonte = Sql.Database(\&quot;DELL-I15-A30S\&quot;, \&quot;TST_PBI\&quot;),\r\n    dbo_Pessoas = Fonte{[Schema=\&quot;dbo\&quot;,Item=\&quot;Pessoas\&quot;]}[Data]\r\nin\r\n    dbo_Pessoas&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}"/>
+        <Entry Type="FillColumnNames" Value="s[&quot;ID&quot;,&quot;Nome&quot;,&quot;Idade&quot;]"/>
         <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1"/>
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Fonte = Sql.Database(\&quot;DELL-I15-A30S\&quot;, Database),\r\n    dbo_Pessoas = Fonte{[Schema=\&quot;dbo\&quot;,Item=\&quot;Pessoas\&quot;]}[Data]\r\nin\r\n    dbo_Pessoas&quot;,&quot;ReferencedQueriesFormulaText&quot;:{&quot;Database&quot;:&quot;\&quot;TST_PBI\&quot; meta [IsParameterQuery=true, List={\&quot;TST_PBI\&quot;, \&quot;TST_PBI_PROD\&quot;}, DefaultValue=\&quot;TST_PBI\&quot;, Type=\&quot;Text\&quot;, IsParameterQueryRequired=true]&quot;}}"/>
         <Entry Type="LoadedToAnalysisServices" Value="l1"/>
         <Entry Type="NavigationStepName" Value="sNavegação"/>
       </StableEntries>
@@ -42,6 +42,22 @@
         <ItemPath>Section1/Pessoas/dbo_Pessoas</ItemPath>
       </ItemLocation>
       <StableEntries/>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Database</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0"/>
+        <Entry Type="LoadToReportDisabled" Value="l1"/>
+        <Entry Type="FillToDataModelEnabled" Value="l0"/>
+        <Entry Type="FillEnabled" Value="l0"/>
+        <Entry Type="FillObjectType" Value="sConnectionOnly"/>
+        <Entry Type="ResultType" Value="sText"/>
+        <Entry Type="NavigationStepName" Value="sNavegação"/>
+        <Entry Type="LoadedToAnalysisServices" Value="l0"/>
+      </StableEntries>
     </Item>
   </Items>
 </LocalPackageMetadataFile>
