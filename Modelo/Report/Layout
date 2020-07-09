@@ -10,96 +10,6 @@
             "type": 202,
             "path": "BaseThemes/CY19SU12.json",
             "name": "CY19SU12"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Bloom.json",
-            "name": "Bloom"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/CityPark.json",
-            "name": "CityPark"
-          },
-          {
-            "type": 202,
-            "path": "BaseThemes/CY18SU07.json",
-            "name": "CY18SU07"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Classroom.json",
-            "name": "Classroom"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/ColorblindSafe.json",
-            "name": "ColorblindSafe"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Divergent.json",
-            "name": "Divergent"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Electric.json",
-            "name": "Electric"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/NewExecutive.json",
-            "name": "NewExecutive"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Frontier.json",
-            "name": "Frontier"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/HighContrast.json",
-            "name": "HighContrast"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Highrise.json",
-            "name": "Highrise"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Innovate.json",
-            "name": "Innovate"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Solar.json",
-            "name": "Solar"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Storm.json",
-            "name": "Storm"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Sunset.json",
-            "name": "Sunset"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Temperature.json",
-            "name": "Temperature"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Tidal.json",
-            "name": "Tidal"
-          },
-          {
-            "type": 201,
-            "path": "BuiltInThemes/Twilight.json",
-            "name": "Twilight"
           }
         ],
         "disabled": false
@@ -117,11 +27,11 @@
       "ordinal": 0,
       "visualContainers": [
         {
-          "x": 817.1673819742489,
-          "y": 174.42060085836908,
+          "x": 816.969696969697,
+          "y": 174.54545454545456,
           "z": 0,
-          "width": 249.95708154506437,
-          "height": 293.90557939914163,
+          "width": 463.03030303030306,
+          "height": 219.3939393939394,
           "config": {
             "__powerbi-vcs-embedded-json__": {
               "name": "77943a6676e52defb6e0",
@@ -129,11 +39,11 @@
                 {
                   "id": 0,
                   "position": {
-                    "x": 817.1673819742489,
-                    "y": 174.42060085836908,
+                    "x": 816.969696969697,
+                    "y": 174.54545454545456,
                     "z": 0,
-                    "width": 249.95708154506437,
-                    "height": 293.90557939914163
+                    "width": 463.03030303030306,
+                    "height": 219.3939393939394
                   }
                 }
               ],
@@ -462,10 +372,10 @@
         },
         {
           "x": 0,
-          "y": 174.42060085836908,
+          "y": 174.54545454545456,
           "z": 1000,
-          "width": 817.1673819742489,
-          "height": 293.90557939914163,
+          "width": 816.969696969697,
+          "height": 545.4545454545455,
           "config": {
             "__powerbi-vcs-embedded-json__": {
               "name": "b9c990741fcb977c91a0",
@@ -474,25 +384,25 @@
                   "id": 0,
                   "position": {
                     "x": 0,
-                    "y": 174.42060085836908,
+                    "y": 174.54545454545456,
                     "z": 1000,
-                    "width": 817.1673819742489,
-                    "height": 293.90557939914163
+                    "width": 816.969696969697,
+                    "height": 545.4545454545455
                   }
                 }
               ],
               "singleVisual": {
-                "visualType": "barChart",
+                "visualType": "clusteredColumnChart",
                 "projections": {
-                  "Y": [
-                    {
-                      "queryRef": "Sum(Tabela.Idade)"
-                    }
-                  ],
                   "Category": [
                     {
                       "queryRef": "Tabela.Nome",
                       "active": true
+                    }
+                  ],
+                  "Y": [
+                    {
+                      "queryRef": "Sum(Tabela.Idade)"
                     }
                   ]
                 },
@@ -505,6 +415,17 @@
                     }
                   ],
                   "Select": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "t"
+                          }
+                        },
+                        "Property": "Nome"
+                      },
+                      "Name": "Tabela.Nome"
+                    },
                     {
                       "Aggregation": {
                         "Expression": {
@@ -520,17 +441,6 @@
                         "Function": 0
                       },
                       "Name": "Sum(Tabela.Idade)"
-                    },
-                    {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Source": "t"
-                          }
-                        },
-                        "Property": "Nome"
-                      },
-                      "Name": "Tabela.Nome"
                     }
                   ],
                   "OrderBy": [
@@ -555,7 +465,27 @@
                   ]
                 },
                 "drillFilterOtherVisuals": true,
-                "hasDefaultSort": true
+                "hasDefaultSort": true,
+                "objects": {
+                  "dataPoint": [
+                    {
+                      "properties": {
+                        "fill": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 4,
+                                  "Percent": 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
               }
             }
           },
@@ -577,6 +507,17 @@
                       ],
                       "Select": [
                         {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "t"
+                              }
+                            },
+                            "Property": "Nome"
+                          },
+                          "Name": "Tabela.Nome"
+                        },
+                        {
                           "Aggregation": {
                             "Expression": {
                               "Column": {
@@ -591,17 +532,6 @@
                             "Function": 0
                           },
                           "Name": "Sum(Tabela.Idade)"
-                        },
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Source": "t"
-                              }
-                            },
-                            "Property": "Nome"
-                          },
-                          "Name": "Tabela.Nome"
                         }
                       ],
                       "OrderBy": [
@@ -653,11 +583,31 @@
           },
           "dataTransforms": {
             "__powerbi-vcs-embedded-json__": {
+              "objects": {
+                "dataPoint": [
+                  {
+                    "properties": {
+                      "fill": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 4,
+                                "Percent": 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
               "projectionOrdering": {
-                "Y": [
+                "Category": [
                   0
                 ],
-                "Category": [
+                "Y": [
                   1
                 ]
               },
@@ -672,15 +622,15 @@
               "queryMetadata": {
                 "Select": [
                   {
+                    "Restatement": "Nome",
+                    "Name": "Tabela.Nome",
+                    "Type": 2048
+                  },
+                  {
                     "Restatement": "Idade",
                     "Name": "Sum(Tabela.Idade)",
                     "Type": 3,
                     "Format": "0"
-                  },
-                  {
-                    "Restatement": "Nome",
-                    "Name": "Tabela.Nome",
-                    "Type": 2048
                   }
                 ]
               },
@@ -688,19 +638,40 @@
                 {
                   "DataRoles": [
                     {
-                      "Name": "Y",
+                      "Name": "Category",
                       "Projection": 0,
-                      "isActive": false
+                      "isActive": true
                     },
                     {
-                      "Name": "Category",
+                      "Name": "Y",
                       "Projection": 1,
-                      "isActive": true
+                      "isActive": false
                     }
                   ]
                 }
               ],
               "selects": [
+                {
+                  "displayName": "Nome",
+                  "queryName": "Tabela.Nome",
+                  "roles": {
+                    "Category": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 1
+                  },
+                  "expr": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Tabela"
+                        }
+                      },
+                      "Property": "Nome"
+                    }
+                  }
+                },
                 {
                   "displayName": "Idade",
                   "format": "0",
@@ -727,27 +698,6 @@
                         }
                       },
                       "Function": 0
-                    }
-                  }
-                },
-                {
-                  "displayName": "Nome",
-                  "queryName": "Tabela.Nome",
-                  "roles": {
-                    "Category": true
-                  },
-                  "type": {
-                    "category": null,
-                    "underlyingType": 1
-                  },
-                  "expr": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Tabela"
-                        }
-                      },
-                      "Property": "Nome"
                     }
                   }
                 }
@@ -787,7 +737,7 @@
                           {
                             "textRuns": [
                               {
-                                "value": "DASHBOARD TESTE V1",
+                                "value": "DASHBOARD TESTE V2",
                                 "textStyle": {
                                   "fontWeight": "bold",
                                   "fontSize": "44pt"
@@ -808,7 +758,19 @@
                         "show": {
                           "expr": {
                             "Literal": {
-                              "Value": "false"
+                              "Value": "true"
+                            }
+                          }
+                        },
+                        "color": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 0,
+                                  "Percent": -0.1
+                                }
+                              }
                             }
                           }
                         }
@@ -821,6 +783,339 @@
           },
           "filters": {
             "__powerbi-vcs-embedded-json__": []
+          }
+        },
+        {
+          "x": 816.969696969697,
+          "y": 393.93939393939394,
+          "z": 2001,
+          "width": 463.03030303030306,
+          "height": 326.06060606060606,
+          "config": {
+            "__powerbi-vcs-embedded-json__": {
+              "name": "136570702c7bdb54f729",
+              "layouts": [
+                {
+                  "id": 0,
+                  "position": {
+                    "x": 816.969696969697,
+                    "y": 393.93939393939394,
+                    "z": 2001,
+                    "width": 463.03030303030306,
+                    "height": 326.06060606060606
+                  }
+                }
+              ],
+              "singleVisual": {
+                "visualType": "donutChart",
+                "projections": {
+                  "Category": [
+                    {
+                      "queryRef": "Tabela.Nome",
+                      "active": true
+                    }
+                  ],
+                  "Y": [
+                    {
+                      "queryRef": "Sum(Tabela.Idade)"
+                    }
+                  ]
+                },
+                "prototypeQuery": {
+                  "Version": 2,
+                  "From": [
+                    {
+                      "Name": "t",
+                      "Entity": "Tabela"
+                    }
+                  ],
+                  "Select": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "t"
+                          }
+                        },
+                        "Property": "Nome"
+                      },
+                      "Name": "Tabela.Nome"
+                    },
+                    {
+                      "Aggregation": {
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "t"
+                              }
+                            },
+                            "Property": "Idade"
+                          }
+                        },
+                        "Function": 0
+                      },
+                      "Name": "Sum(Tabela.Idade)"
+                    }
+                  ],
+                  "OrderBy": [
+                    {
+                      "Direction": 2,
+                      "Expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "t"
+                                }
+                              },
+                              "Property": "Idade"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      }
+                    }
+                  ]
+                },
+                "drillFilterOtherVisuals": true,
+                "hasDefaultSort": true,
+                "objects": {
+                  "dataPoint": [
+                    {
+                      "properties": {
+                        "fill": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 4,
+                                  "Percent": 0
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "filters": {
+            "__powerbi-vcs-embedded-json__": []
+          },
+          "query": {
+            "__powerbi-vcs-embedded-json__": {
+              "Commands": [
+                {
+                  "SemanticQueryDataShapeCommand": {
+                    "Query": {
+                      "Version": 2,
+                      "From": [
+                        {
+                          "Name": "t",
+                          "Entity": "Tabela"
+                        }
+                      ],
+                      "Select": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "t"
+                              }
+                            },
+                            "Property": "Nome"
+                          },
+                          "Name": "Tabela.Nome"
+                        },
+                        {
+                          "Aggregation": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "t"
+                                  }
+                                },
+                                "Property": "Idade"
+                              }
+                            },
+                            "Function": 0
+                          },
+                          "Name": "Sum(Tabela.Idade)"
+                        }
+                      ],
+                      "OrderBy": [
+                        {
+                          "Direction": 2,
+                          "Expression": {
+                            "Aggregation": {
+                              "Expression": {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "t"
+                                    }
+                                  },
+                                  "Property": "Idade"
+                                }
+                              },
+                              "Function": 0
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "Binding": {
+                      "Primary": {
+                        "Groupings": [
+                          {
+                            "Projections": [
+                              0,
+                              1
+                            ]
+                          }
+                        ]
+                      },
+                      "DataReduction": {
+                        "DataVolume": 3,
+                        "Primary": {
+                          "Top": {}
+                        }
+                      },
+                      "Version": 1
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "dataTransforms": {
+            "__powerbi-vcs-embedded-json__": {
+              "objects": {
+                "dataPoint": [
+                  {
+                    "properties": {
+                      "fill": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 4,
+                                "Percent": 0
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "projectionOrdering": {
+                "Category": [
+                  0
+                ],
+                "Y": [
+                  1
+                ]
+              },
+              "projectionActiveItems": {
+                "Category": [
+                  {
+                    "queryRef": "Tabela.Nome",
+                    "suppressConcat": false
+                  }
+                ]
+              },
+              "queryMetadata": {
+                "Select": [
+                  {
+                    "Restatement": "Nome",
+                    "Name": "Tabela.Nome",
+                    "Type": 2048
+                  },
+                  {
+                    "Restatement": "Idade",
+                    "Name": "Sum(Tabela.Idade)",
+                    "Type": 3,
+                    "Format": "0"
+                  }
+                ]
+              },
+              "visualElements": [
+                {
+                  "DataRoles": [
+                    {
+                      "Name": "Category",
+                      "Projection": 0,
+                      "isActive": true
+                    },
+                    {
+                      "Name": "Y",
+                      "Projection": 1,
+                      "isActive": false
+                    }
+                  ]
+                }
+              ],
+              "selects": [
+                {
+                  "displayName": "Nome",
+                  "queryName": "Tabela.Nome",
+                  "roles": {
+                    "Category": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 1
+                  },
+                  "expr": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Tabela"
+                        }
+                      },
+                      "Property": "Nome"
+                    }
+                  }
+                },
+                {
+                  "displayName": "Idade",
+                  "format": "0",
+                  "queryName": "Sum(Tabela.Idade)",
+                  "roles": {
+                    "Y": true
+                  },
+                  "sort": 2,
+                  "sortOrder": 0,
+                  "type": {
+                    "category": null,
+                    "underlyingType": 260
+                  },
+                  "expr": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Tabela"
+                            }
+                          },
+                          "Property": "Idade"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                }
+              ]
+            }
           }
         }
       ],
