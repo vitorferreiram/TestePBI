@@ -27,11 +27,11 @@
       "ordinal": 0,
       "visualContainers": [
         {
-          "x": 816.969696969697,
-          "y": 174.54545454545456,
+          "x": 1058.1818181818182,
+          "y": 8.484848484848484,
           "z": 0,
-          "width": 463.03030303030306,
-          "height": 219.3939393939394,
+          "width": 212.12121212121212,
+          "height": 166.06060606060606,
           "config": {
             "__powerbi-vcs-embedded-json__": {
               "name": "77943a6676e52defb6e0",
@@ -39,11 +39,11 @@
                 {
                   "id": 0,
                   "position": {
-                    "x": 816.969696969697,
-                    "y": 174.54545454545456,
+                    "x": 1058.1818181818182,
+                    "y": 8.484848484848484,
                     "z": 0,
-                    "width": 463.03030303030306,
-                    "height": 219.3939393939394
+                    "width": 212.12121212121212,
+                    "height": 166.06060606060606
                   }
                 }
               ],
@@ -147,6 +147,86 @@
                         "metadata": "Tabela.Nome"
                       }
                     }
+                  ],
+                  "total": [
+                    {
+                      "properties": {
+                        "totals": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "values": [
+                    {
+                      "properties": {
+                        "fontSize": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "14D"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                "vcObjects": {
+                  "background": [
+                    {
+                      "properties": {
+                        "show": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        },
+                        "transparency": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "30D"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "border": [
+                    {
+                      "properties": {
+                        "show": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        },
+                        "color": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 0,
+                                  "Percent": -0.1
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "radius": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "5D"
+                            }
+                          }
+                        }
+                      }
+                    }
                   ]
                 }
               }
@@ -225,8 +305,7 @@
                             "Projections": [
                               0,
                               1
-                            ],
-                            "Subtotal": 1
+                            ]
                           }
                         ]
                       },
@@ -274,6 +353,32 @@
                     },
                     "selector": {
                       "metadata": "Tabela.Nome"
+                    }
+                  }
+                ],
+                "total": [
+                  {
+                    "properties": {
+                      "totals": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "false"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "values": [
+                  {
+                    "properties": {
+                      "fontSize": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "14D"
+                          }
+                        }
+                      }
                     }
                   }
                 ]
@@ -372,10 +477,10 @@
         },
         {
           "x": 0,
-          "y": 174.54545454545456,
+          "y": 186.66666666666669,
           "z": 1000,
-          "width": 816.969696969697,
-          "height": 545.4545454545455,
+          "width": 803.6363636363636,
+          "height": 533.3333333333334,
           "config": {
             "__powerbi-vcs-embedded-json__": {
               "name": "b9c990741fcb977c91a0",
@@ -384,10 +489,10 @@
                   "id": 0,
                   "position": {
                     "x": 0,
-                    "y": 174.54545454545456,
+                    "y": 186.66666666666669,
                     "z": 1000,
-                    "width": 816.969696969697,
-                    "height": 545.4545454545455
+                    "width": 803.6363636363636,
+                    "height": 533.3333333333334
                   }
                 }
               ],
@@ -479,6 +584,60 @@
                                   "Percent": 0
                                 }
                               }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                "vcObjects": {
+                  "background": [
+                    {
+                      "properties": {
+                        "show": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        },
+                        "transparency": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "30D"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "border": [
+                    {
+                      "properties": {
+                        "show": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        },
+                        "color": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 0,
+                                  "Percent": -0.1
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "radius": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "5D"
                             }
                           }
                         }
@@ -709,8 +868,8 @@
           "x": 0,
           "y": 0,
           "z": 2000,
-          "width": 1280,
-          "height": 94.76394849785407,
+          "width": 385.4545454545455,
+          "height": 174.54545454545456,
           "config": {
             "__powerbi-vcs-embedded-json__": {
               "name": "095e7b20acb363b9f447",
@@ -721,8 +880,8 @@
                     "x": 0,
                     "y": 0,
                     "z": 2000,
-                    "width": 1280,
-                    "height": 94.76394849785407
+                    "width": 385.4545454545455,
+                    "height": 174.54545454545456
                   }
                 }
               ],
@@ -737,10 +896,24 @@
                           {
                             "textRuns": [
                               {
-                                "value": "DASHBOARD TESTE V2",
+                                "value": "DASHBOARD",
                                 "textStyle": {
                                   "fontWeight": "bold",
-                                  "fontSize": "44pt"
+                                  "fontSize": "44pt",
+                                  "color": "#12239e"
+                                }
+                              }
+                            ],
+                            "horizontalTextAlignment": "center"
+                          },
+                          {
+                            "textRuns": [
+                              {
+                                "value": "TESTE V3",
+                                "textStyle": {
+                                  "fontWeight": "bold",
+                                  "fontSize": "44pt",
+                                  "color": "#12239e"
                                 }
                               }
                             ],
@@ -758,7 +931,7 @@
                         "show": {
                           "expr": {
                             "Literal": {
-                              "Value": "true"
+                              "Value": "false"
                             }
                           }
                         },
@@ -787,10 +960,10 @@
         },
         {
           "x": 816.969696969697,
-          "y": 393.93939393939394,
-          "z": 2001,
-          "width": 463.03030303030306,
-          "height": 326.06060606060606,
+          "y": 186.66666666666669,
+          "z": 3000,
+          "width": 453.33333333333337,
+          "height": 533.3333333333334,
           "config": {
             "__powerbi-vcs-embedded-json__": {
               "name": "136570702c7bdb54f729",
@@ -799,10 +972,10 @@
                   "id": 0,
                   "position": {
                     "x": 816.969696969697,
-                    "y": 393.93939393939394,
-                    "z": 2001,
-                    "width": 463.03030303030306,
-                    "height": 326.06060606060606
+                    "y": 186.66666666666669,
+                    "z": 3000,
+                    "width": 453.33333333333337,
+                    "height": 533.3333333333334
                   }
                 }
               ],
@@ -894,6 +1067,80 @@
                                   "Percent": 0
                                 }
                               }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "legend": [
+                    {
+                      "properties": {
+                        "position": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'TopCenter'"
+                            }
+                          }
+                        },
+                        "showTitle": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                "vcObjects": {
+                  "background": [
+                    {
+                      "properties": {
+                        "show": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        },
+                        "transparency": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "30D"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "border": [
+                    {
+                      "properties": {
+                        "show": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        },
+                        "color": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 0,
+                                  "Percent": -0.1
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "radius": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "5D"
                             }
                           }
                         }
@@ -1014,6 +1261,26 @@
                       }
                     }
                   }
+                ],
+                "legend": [
+                  {
+                    "properties": {
+                      "position": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "'TopCenter'"
+                          }
+                        }
+                      },
+                      "showTitle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "false"
+                          }
+                        }
+                      }
+                    }
+                  }
                 ]
               },
               "projectionOrdering": {
@@ -1117,10 +1384,658 @@
               ]
             }
           }
+        },
+        {
+          "x": 402.42424242424244,
+          "y": 0,
+          "z": 3001,
+          "width": 156.36363636363637,
+          "height": 174.54545454545456,
+          "config": {
+            "__powerbi-vcs-embedded-json__": {
+              "name": "21bafdd26a4cc612b3f8",
+              "layouts": [
+                {
+                  "id": 0,
+                  "position": {
+                    "x": 402.42424242424244,
+                    "y": 0,
+                    "z": 3001,
+                    "width": 156.36363636363637,
+                    "height": 174.54545454545456
+                  }
+                }
+              ],
+              "singleVisual": {
+                "visualType": "slicer",
+                "projections": {
+                  "Values": [
+                    {
+                      "queryRef": "Tabela.Nome",
+                      "active": true
+                    }
+                  ]
+                },
+                "prototypeQuery": {
+                  "Version": 2,
+                  "From": [
+                    {
+                      "Name": "t",
+                      "Entity": "Tabela"
+                    }
+                  ],
+                  "Select": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "t"
+                          }
+                        },
+                        "Property": "Nome"
+                      },
+                      "Name": "Tabela.Nome"
+                    }
+                  ]
+                },
+                "drillFilterOtherVisuals": true,
+                "objects": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "general": [
+                    {
+                      "properties": {}
+                    }
+                  ],
+                  "header": [
+                    {
+                      "properties": {
+                        "textSize": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "14D"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "items": [
+                    {
+                      "properties": {
+                        "textSize": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "12D"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                "vcObjects": {
+                  "background": [
+                    {
+                      "properties": {
+                        "show": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        },
+                        "transparency": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "30D"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "border": [
+                    {
+                      "properties": {
+                        "show": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "false"
+                            }
+                          }
+                        },
+                        "color": {
+                          "solid": {
+                            "color": {
+                              "expr": {
+                                "ThemeDataColor": {
+                                  "ColorId": 0,
+                                  "Percent": -0.1
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "radius": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "5D"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "filters": {
+            "__powerbi-vcs-embedded-json__": []
+          },
+          "query": {
+            "__powerbi-vcs-embedded-json__": {
+              "Commands": [
+                {
+                  "SemanticQueryDataShapeCommand": {
+                    "Query": {
+                      "Version": 2,
+                      "From": [
+                        {
+                          "Name": "t",
+                          "Entity": "Tabela"
+                        }
+                      ],
+                      "Select": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "t"
+                              }
+                            },
+                            "Property": "Nome"
+                          },
+                          "Name": "Tabela.Nome"
+                        }
+                      ]
+                    },
+                    "Binding": {
+                      "Primary": {
+                        "Groupings": [
+                          {
+                            "Projections": [
+                              0
+                            ]
+                          }
+                        ]
+                      },
+                      "DataReduction": {
+                        "DataVolume": 3,
+                        "Primary": {
+                          "Window": {}
+                        }
+                      },
+                      "IncludeEmptyGroups": true,
+                      "Version": 1
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "dataTransforms": {
+            "__powerbi-vcs-embedded-json__": {
+              "objects": {
+                "data": [
+                  {
+                    "properties": {
+                      "mode": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "'Basic'"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "general": [
+                  {
+                    "properties": {}
+                  }
+                ],
+                "header": [
+                  {
+                    "properties": {
+                      "textSize": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "14D"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "items": [
+                  {
+                    "properties": {
+                      "textSize": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "12D"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "projectionOrdering": {
+                "Values": [
+                  0
+                ]
+              },
+              "projectionActiveItems": {
+                "Values": [
+                  {
+                    "queryRef": "Tabela.Nome",
+                    "suppressConcat": false
+                  }
+                ]
+              },
+              "queryMetadata": {
+                "Select": [
+                  {
+                    "Restatement": "Nome",
+                    "Name": "Tabela.Nome",
+                    "Type": 2048
+                  }
+                ]
+              },
+              "visualElements": [
+                {
+                  "DataRoles": [
+                    {
+                      "Name": "Values",
+                      "Projection": 0,
+                      "isActive": true
+                    }
+                  ]
+                }
+              ],
+              "selects": [
+                {
+                  "displayName": "Nome",
+                  "queryName": "Tabela.Nome",
+                  "roles": {
+                    "Values": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 1
+                  },
+                  "expr": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Tabela"
+                        }
+                      },
+                      "Property": "Nome"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "x": 558.7878787878789,
+          "y": 8.484848484848484,
+          "z": 3002,
+          "width": 500.6060606060606,
+          "height": 166.06060606060606,
+          "config": {
+            "__powerbi-vcs-embedded-json__": {
+              "name": "d0da538b381e26df5117",
+              "layouts": [
+                {
+                  "id": 0,
+                  "position": {
+                    "x": 558.7878787878789,
+                    "y": 8.484848484848484,
+                    "z": 3002,
+                    "width": 500.6060606060606,
+                    "height": 166.06060606060606
+                  }
+                }
+              ],
+              "singleVisual": {
+                "visualType": "treemap",
+                "projections": {
+                  "Group": [
+                    {
+                      "queryRef": "Tabela.Nome",
+                      "active": true
+                    }
+                  ],
+                  "Values": [
+                    {
+                      "queryRef": "Sum(Tabela.Idade)"
+                    }
+                  ]
+                },
+                "prototypeQuery": {
+                  "Version": 2,
+                  "From": [
+                    {
+                      "Name": "t",
+                      "Entity": "Tabela"
+                    }
+                  ],
+                  "Select": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "t"
+                          }
+                        },
+                        "Property": "Nome"
+                      },
+                      "Name": "Tabela.Nome"
+                    },
+                    {
+                      "Aggregation": {
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "t"
+                              }
+                            },
+                            "Property": "Idade"
+                          }
+                        },
+                        "Function": 0
+                      },
+                      "Name": "Sum(Tabela.Idade)"
+                    }
+                  ]
+                },
+                "drillFilterOtherVisuals": true,
+                "objects": {
+                  "labels": [
+                    {
+                      "properties": {
+                        "show": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "filters": {
+            "__powerbi-vcs-embedded-json__": []
+          },
+          "query": {
+            "__powerbi-vcs-embedded-json__": {
+              "Commands": [
+                {
+                  "SemanticQueryDataShapeCommand": {
+                    "Query": {
+                      "Version": 2,
+                      "From": [
+                        {
+                          "Name": "t",
+                          "Entity": "Tabela"
+                        }
+                      ],
+                      "Select": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "t"
+                              }
+                            },
+                            "Property": "Nome"
+                          },
+                          "Name": "Tabela.Nome"
+                        },
+                        {
+                          "Aggregation": {
+                            "Expression": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "t"
+                                  }
+                                },
+                                "Property": "Idade"
+                              }
+                            },
+                            "Function": 0
+                          },
+                          "Name": "Sum(Tabela.Idade)"
+                        }
+                      ],
+                      "OrderBy": [
+                        {
+                          "Direction": 2,
+                          "Expression": {
+                            "Aggregation": {
+                              "Expression": {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "t"
+                                    }
+                                  },
+                                  "Property": "Idade"
+                                }
+                              },
+                              "Function": 0
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "Binding": {
+                      "Primary": {
+                        "Groupings": [
+                          {
+                            "Projections": [
+                              0,
+                              1
+                            ]
+                          }
+                        ]
+                      },
+                      "DataReduction": {
+                        "DataVolume": 3,
+                        "Primary": {
+                          "Top": {}
+                        }
+                      },
+                      "Version": 1
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "dataTransforms": {
+            "__powerbi-vcs-embedded-json__": {
+              "objects": {
+                "labels": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "true"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "projectionOrdering": {
+                "Group": [
+                  0
+                ],
+                "Values": [
+                  1
+                ]
+              },
+              "projectionActiveItems": {
+                "Group": [
+                  {
+                    "queryRef": "Tabela.Nome",
+                    "suppressConcat": false
+                  }
+                ]
+              },
+              "queryMetadata": {
+                "Select": [
+                  {
+                    "Restatement": "Nome",
+                    "Name": "Tabela.Nome",
+                    "Type": 2048
+                  },
+                  {
+                    "Restatement": "Idade",
+                    "Name": "Sum(Tabela.Idade)",
+                    "Type": 3,
+                    "Format": "0"
+                  }
+                ]
+              },
+              "visualElements": [
+                {
+                  "DataRoles": [
+                    {
+                      "Name": "Group",
+                      "Projection": 0,
+                      "isActive": true
+                    },
+                    {
+                      "Name": "Values",
+                      "Projection": 1,
+                      "isActive": false
+                    }
+                  ]
+                }
+              ],
+              "selects": [
+                {
+                  "displayName": "Nome",
+                  "queryName": "Tabela.Nome",
+                  "roles": {
+                    "Group": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 1
+                  },
+                  "expr": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Tabela"
+                        }
+                      },
+                      "Property": "Nome"
+                    }
+                  }
+                },
+                {
+                  "displayName": "Idade",
+                  "format": "0",
+                  "queryName": "Sum(Tabela.Idade)",
+                  "roles": {
+                    "Values": true
+                  },
+                  "sort": 2,
+                  "sortOrder": 0,
+                  "type": {
+                    "category": null,
+                    "underlyingType": 260
+                  },
+                  "expr": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Tabela"
+                            }
+                          },
+                          "Property": "Idade"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  }
+                }
+              ]
+            }
+          }
         }
       ],
       "config": {
-        "__powerbi-vcs-embedded-json__": {}
+        "__powerbi-vcs-embedded-json__": {
+          "objects": {
+            "outspace": [
+              {
+                "properties": {
+                  "color": {
+                    "solid": {
+                      "color": {
+                        "expr": {
+                          "ThemeDataColor": {
+                            "ColorId": 0,
+                            "Percent": -0.1
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "transparency": {
+                    "expr": {
+                      "Literal": {
+                        "Value": "60D"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
       },
       "displayOption": 1,
       "width": 1280,
