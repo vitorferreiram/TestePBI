@@ -10,6 +10,96 @@
             "type": 202,
             "path": "BaseThemes/CY19SU12.json",
             "name": "CY19SU12"
+          },
+          {
+            "type": 201,
+            "path": "BuiltInThemes/Bloom.json",
+            "name": "Bloom"
+          },
+          {
+            "type": 201,
+            "path": "BuiltInThemes/CityPark.json",
+            "name": "CityPark"
+          },
+          {
+            "type": 202,
+            "path": "BaseThemes/CY18SU07.json",
+            "name": "CY18SU07"
+          },
+          {
+            "type": 201,
+            "path": "BuiltInThemes/Classroom.json",
+            "name": "Classroom"
+          },
+          {
+            "type": 201,
+            "path": "BuiltInThemes/ColorblindSafe.json",
+            "name": "ColorblindSafe"
+          },
+          {
+            "type": 201,
+            "path": "BuiltInThemes/Divergent.json",
+            "name": "Divergent"
+          },
+          {
+            "type": 201,
+            "path": "BuiltInThemes/Electric.json",
+            "name": "Electric"
+          },
+          {
+            "type": 201,
+            "path": "BuiltInThemes/NewExecutive.json",
+            "name": "NewExecutive"
+          },
+          {
+            "type": 201,
+            "path": "BuiltInThemes/Frontier.json",
+            "name": "Frontier"
+          },
+          {
+            "type": 201,
+            "path": "BuiltInThemes/HighContrast.json",
+            "name": "HighContrast"
+          },
+          {
+            "type": 201,
+            "path": "BuiltInThemes/Highrise.json",
+            "name": "Highrise"
+          },
+          {
+            "type": 201,
+            "path": "BuiltInThemes/Innovate.json",
+            "name": "Innovate"
+          },
+          {
+            "type": 201,
+            "path": "BuiltInThemes/Solar.json",
+            "name": "Solar"
+          },
+          {
+            "type": 201,
+            "path": "BuiltInThemes/Storm.json",
+            "name": "Storm"
+          },
+          {
+            "type": 201,
+            "path": "BuiltInThemes/Sunset.json",
+            "name": "Sunset"
+          },
+          {
+            "type": 201,
+            "path": "BuiltInThemes/Temperature.json",
+            "name": "Temperature"
+          },
+          {
+            "type": 201,
+            "path": "BuiltInThemes/Tidal.json",
+            "name": "Tidal"
+          },
+          {
+            "type": 201,
+            "path": "BuiltInThemes/Twilight.json",
+            "name": "Twilight"
           }
         ],
         "disabled": false
@@ -589,6 +679,19 @@
                         }
                       }
                     }
+                  ],
+                  "labels": [
+                    {
+                      "properties": {
+                        "show": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
                   ]
                 },
                 "vcObjects": {
@@ -760,6 +863,19 @@
                       }
                     }
                   }
+                ],
+                "labels": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "true"
+                          }
+                        }
+                      }
+                    }
+                  }
                 ]
               },
               "projectionOrdering": {
@@ -909,7 +1025,7 @@
                           {
                             "textRuns": [
                               {
-                                "value": "TESTE V3",
+                                "value": "TESTE V4",
                                 "textStyle": {
                                   "fontWeight": "bold",
                                   "fontSize": "44pt",
@@ -1388,7 +1504,7 @@
         {
           "x": 402.42424242424244,
           "y": 0,
-          "z": 3001,
+          "z": 4000,
           "width": 156.36363636363637,
           "height": 174.54545454545456,
           "config": {
@@ -1400,7 +1516,7 @@
                   "position": {
                     "x": 402.42424242424244,
                     "y": 0,
-                    "z": 3001,
+                    "z": 4000,
                     "width": 156.36363636363637,
                     "height": 174.54545454545456
                   }
@@ -1706,7 +1822,7 @@
         {
           "x": 558.7878787878789,
           "y": 8.484848484848484,
-          "z": 3002,
+          "z": 5000,
           "width": 500.6060606060606,
           "height": 166.06060606060606,
           "config": {
@@ -1718,7 +1834,7 @@
                   "position": {
                     "x": 558.7878787878789,
                     "y": 8.484848484848484,
-                    "z": 3002,
+                    "z": 5000,
                     "width": 500.6060606060606,
                     "height": 166.06060606060606
                   }
