@@ -7,4 +7,4 @@ in
     dbo_Pessoas;
 
 [ Description = "Seleção do database" ]
-shared Database = "TST_PBI" meta [IsParameterQuery=true, List={"TST_PBI", "TST_PBI_PROD"}, DefaultValue="TST_PBI", Type="Text", IsParameterQueryRequired=true];
+shared Database = "TST_PBI_PROD" meta [IsParameterQuery=true, List={"TST_PBI", "TST_PBI_PROD"}, DefaultValue="TST_PBI", Type="Text", IsParameterQueryRequired=true];
