@@ -142,10 +142,10 @@
                 "projections": {
                   "Values": [
                     {
-                      "queryRef": "Tabela.Nome"
+                      "queryRef": "Pessoas.Nome"
                     },
                     {
-                      "queryRef": "Sum(Tabela.Idade)"
+                      "queryRef": "Sum(Pessoas.Idade)"
                     }
                   ]
                 },
@@ -153,18 +153,29 @@
                   "Version": 2,
                   "From": [
                     {
-                      "Name": "t",
-                      "Entity": "Tabela"
+                      "Name": "p",
+                      "Entity": "Pessoas"
                     }
                   ],
                   "Select": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "p"
+                          }
+                        },
+                        "Property": "Nome"
+                      },
+                      "Name": "Pessoas.Nome"
+                    },
                     {
                       "Aggregation": {
                         "Expression": {
                           "Column": {
                             "Expression": {
                               "SourceRef": {
-                                "Source": "t"
+                                "Source": "p"
                               }
                             },
                             "Property": "Idade"
@@ -172,38 +183,7 @@
                         },
                         "Function": 0
                       },
-                      "Name": "Sum(Tabela.Idade)"
-                    },
-                    {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Source": "t"
-                          }
-                        },
-                        "Property": "Nome"
-                      },
-                      "Name": "Tabela.Nome"
-                    }
-                  ],
-                  "OrderBy": [
-                    {
-                      "Direction": 2,
-                      "Expression": {
-                        "Aggregation": {
-                          "Expression": {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "t"
-                                }
-                              },
-                              "Property": "Idade"
-                            }
-                          },
-                          "Function": 0
-                        }
-                      }
+                      "Name": "Sum(Pessoas.Idade)"
                     }
                   ]
                 },
@@ -219,22 +199,6 @@
                             }
                           }
                         }
-                      }
-                    }
-                  ],
-                  "columnWidth": [
-                    {
-                      "properties": {
-                        "value": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "116.96137339055794D"
-                            }
-                          }
-                        }
-                      },
-                      "selector": {
-                        "metadata": "Tabela.Nome"
                       }
                     }
                   ],
@@ -334,18 +298,29 @@
                       "Version": 2,
                       "From": [
                         {
-                          "Name": "t",
-                          "Entity": "Tabela"
+                          "Name": "p",
+                          "Entity": "Pessoas"
                         }
                       ],
                       "Select": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "p"
+                              }
+                            },
+                            "Property": "Nome"
+                          },
+                          "Name": "Pessoas.Nome"
+                        },
                         {
                           "Aggregation": {
                             "Expression": {
                               "Column": {
                                 "Expression": {
                                   "SourceRef": {
-                                    "Source": "t"
+                                    "Source": "p"
                                   }
                                 },
                                 "Property": "Idade"
@@ -353,38 +328,7 @@
                             },
                             "Function": 0
                           },
-                          "Name": "Sum(Tabela.Idade)"
-                        },
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Source": "t"
-                              }
-                            },
-                            "Property": "Nome"
-                          },
-                          "Name": "Tabela.Nome"
-                        }
-                      ],
-                      "OrderBy": [
-                        {
-                          "Direction": 2,
-                          "Expression": {
-                            "Aggregation": {
-                              "Expression": {
-                                "Column": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Source": "t"
-                                    }
-                                  },
-                                  "Property": "Idade"
-                                }
-                              },
-                              "Function": 0
-                            }
-                          }
+                          "Name": "Sum(Pessoas.Idade)"
                         }
                       ]
                     },
@@ -430,22 +374,6 @@
                     }
                   }
                 ],
-                "columnWidth": [
-                  {
-                    "properties": {
-                      "value": {
-                        "expr": {
-                          "Literal": {
-                            "Value": "116.96137339055794D"
-                          }
-                        }
-                      }
-                    },
-                    "selector": {
-                      "metadata": "Tabela.Nome"
-                    }
-                  }
-                ],
                 "total": [
                   {
                     "properties": {
@@ -475,22 +403,22 @@
               },
               "projectionOrdering": {
                 "Values": [
-                  1,
-                  0
+                  0,
+                  1
                 ]
               },
               "queryMetadata": {
                 "Select": [
                   {
-                    "Restatement": "Idade",
-                    "Name": "Sum(Tabela.Idade)",
-                    "Type": 3,
-                    "Format": "0"
+                    "Restatement": "Nome",
+                    "Name": "Pessoas.Nome",
+                    "Type": 2048
                   },
                   {
-                    "Restatement": "Nome",
-                    "Name": "Tabela.Nome",
-                    "Type": 2048
+                    "Restatement": "Idade",
+                    "Name": "Sum(Pessoas.Idade)",
+                    "Type": 3,
+                    "Format": "0"
                   }
                 ]
               },
@@ -499,12 +427,12 @@
                   "DataRoles": [
                     {
                       "Name": "Values",
-                      "Projection": 1,
+                      "Projection": 0,
                       "isActive": false
                     },
                     {
                       "Name": "Values",
-                      "Projection": 0,
+                      "Projection": 1,
                       "isActive": false
                     }
                   ]
@@ -512,37 +440,8 @@
               ],
               "selects": [
                 {
-                  "displayName": "Idade",
-                  "format": "0",
-                  "queryName": "Sum(Tabela.Idade)",
-                  "roles": {
-                    "Values": true
-                  },
-                  "sort": 2,
-                  "sortOrder": 0,
-                  "type": {
-                    "category": null,
-                    "underlyingType": 260
-                  },
-                  "expr": {
-                    "Aggregation": {
-                      "Expression": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Tabela"
-                            }
-                          },
-                          "Property": "Idade"
-                        }
-                      },
-                      "Function": 0
-                    }
-                  }
-                },
-                {
                   "displayName": "Nome",
-                  "queryName": "Tabela.Nome",
+                  "queryName": "Pessoas.Nome",
                   "roles": {
                     "Values": true
                   },
@@ -554,10 +453,37 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "Tabela"
+                          "Entity": "Pessoas"
                         }
                       },
                       "Property": "Nome"
+                    }
+                  }
+                },
+                {
+                  "displayName": "Idade",
+                  "format": "0",
+                  "queryName": "Sum(Pessoas.Idade)",
+                  "roles": {
+                    "Values": true
+                  },
+                  "type": {
+                    "category": null,
+                    "underlyingType": 260
+                  },
+                  "expr": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Pessoas"
+                            }
+                          },
+                          "Property": "Idade"
+                        }
+                      },
+                      "Function": 0
                     }
                   }
                 }
@@ -591,13 +517,13 @@
                 "projections": {
                   "Category": [
                     {
-                      "queryRef": "Tabela.Nome",
+                      "queryRef": "Pessoas.Nome",
                       "active": true
                     }
                   ],
                   "Y": [
                     {
-                      "queryRef": "Sum(Tabela.Idade)"
+                      "queryRef": "Sum(Pessoas.Idade)"
                     }
                   ]
                 },
@@ -605,8 +531,8 @@
                   "Version": 2,
                   "From": [
                     {
-                      "Name": "t",
-                      "Entity": "Tabela"
+                      "Name": "p",
+                      "Entity": "Pessoas"
                     }
                   ],
                   "Select": [
@@ -614,12 +540,12 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Source": "t"
+                            "Source": "p"
                           }
                         },
                         "Property": "Nome"
                       },
-                      "Name": "Tabela.Nome"
+                      "Name": "Pessoas.Nome"
                     },
                     {
                       "Aggregation": {
@@ -627,7 +553,7 @@
                           "Column": {
                             "Expression": {
                               "SourceRef": {
-                                "Source": "t"
+                                "Source": "p"
                               }
                             },
                             "Property": "Idade"
@@ -635,7 +561,7 @@
                         },
                         "Function": 0
                       },
-                      "Name": "Sum(Tabela.Idade)"
+                      "Name": "Sum(Pessoas.Idade)"
                     }
                   ],
                   "OrderBy": [
@@ -647,7 +573,7 @@
                             "Column": {
                               "Expression": {
                                 "SourceRef": {
-                                  "Source": "t"
+                                  "Source": "p"
                                 }
                               },
                               "Property": "Idade"
@@ -763,8 +689,8 @@
                       "Version": 2,
                       "From": [
                         {
-                          "Name": "t",
-                          "Entity": "Tabela"
+                          "Name": "p",
+                          "Entity": "Pessoas"
                         }
                       ],
                       "Select": [
@@ -772,12 +698,12 @@
                           "Column": {
                             "Expression": {
                               "SourceRef": {
-                                "Source": "t"
+                                "Source": "p"
                               }
                             },
                             "Property": "Nome"
                           },
-                          "Name": "Tabela.Nome"
+                          "Name": "Pessoas.Nome"
                         },
                         {
                           "Aggregation": {
@@ -785,7 +711,7 @@
                               "Column": {
                                 "Expression": {
                                   "SourceRef": {
-                                    "Source": "t"
+                                    "Source": "p"
                                   }
                                 },
                                 "Property": "Idade"
@@ -793,7 +719,7 @@
                             },
                             "Function": 0
                           },
-                          "Name": "Sum(Tabela.Idade)"
+                          "Name": "Sum(Pessoas.Idade)"
                         }
                       ],
                       "OrderBy": [
@@ -805,7 +731,7 @@
                                 "Column": {
                                   "Expression": {
                                     "SourceRef": {
-                                      "Source": "t"
+                                      "Source": "p"
                                     }
                                   },
                                   "Property": "Idade"
@@ -889,7 +815,7 @@
               "projectionActiveItems": {
                 "Category": [
                   {
-                    "queryRef": "Tabela.Nome",
+                    "queryRef": "Pessoas.Nome",
                     "suppressConcat": false
                   }
                 ]
@@ -898,12 +824,12 @@
                 "Select": [
                   {
                     "Restatement": "Nome",
-                    "Name": "Tabela.Nome",
+                    "Name": "Pessoas.Nome",
                     "Type": 2048
                   },
                   {
                     "Restatement": "Idade",
-                    "Name": "Sum(Tabela.Idade)",
+                    "Name": "Sum(Pessoas.Idade)",
                     "Type": 3,
                     "Format": "0"
                   }
@@ -928,7 +854,7 @@
               "selects": [
                 {
                   "displayName": "Nome",
-                  "queryName": "Tabela.Nome",
+                  "queryName": "Pessoas.Nome",
                   "roles": {
                     "Category": true
                   },
@@ -940,7 +866,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "Tabela"
+                          "Entity": "Pessoas"
                         }
                       },
                       "Property": "Nome"
@@ -950,7 +876,7 @@
                 {
                   "displayName": "Idade",
                   "format": "0",
-                  "queryName": "Sum(Tabela.Idade)",
+                  "queryName": "Sum(Pessoas.Idade)",
                   "roles": {
                     "Y": true
                   },
@@ -966,7 +892,7 @@
                         "Column": {
                           "Expression": {
                             "SourceRef": {
-                              "Entity": "Tabela"
+                              "Entity": "Pessoas"
                             }
                           },
                           "Property": "Idade"
@@ -1025,11 +951,19 @@
                           {
                             "textRuns": [
                               {
-                                "value": "TESTE V4",
+                                "value": "TESTE V5 ",
                                 "textStyle": {
                                   "fontWeight": "bold",
                                   "fontSize": "44pt",
                                   "color": "#12239e"
+                                }
+                              },
+                              {
+                                "value": "SQL",
+                                "textStyle": {
+                                  "fontWeight": "bold",
+                                  "fontSize": "24pt",
+                                  "color": "#d64550"
                                 }
                               }
                             ],
@@ -1100,13 +1034,13 @@
                 "projections": {
                   "Category": [
                     {
-                      "queryRef": "Tabela.Nome",
+                      "queryRef": "Pessoas.Nome",
                       "active": true
                     }
                   ],
                   "Y": [
                     {
-                      "queryRef": "Sum(Tabela.Idade)"
+                      "queryRef": "Sum(Pessoas.Idade)"
                     }
                   ]
                 },
@@ -1114,8 +1048,8 @@
                   "Version": 2,
                   "From": [
                     {
-                      "Name": "t",
-                      "Entity": "Tabela"
+                      "Name": "p",
+                      "Entity": "Pessoas"
                     }
                   ],
                   "Select": [
@@ -1123,12 +1057,12 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Source": "t"
+                            "Source": "p"
                           }
                         },
                         "Property": "Nome"
                       },
-                      "Name": "Tabela.Nome"
+                      "Name": "Pessoas.Nome"
                     },
                     {
                       "Aggregation": {
@@ -1136,7 +1070,7 @@
                           "Column": {
                             "Expression": {
                               "SourceRef": {
-                                "Source": "t"
+                                "Source": "p"
                               }
                             },
                             "Property": "Idade"
@@ -1144,7 +1078,7 @@
                         },
                         "Function": 0
                       },
-                      "Name": "Sum(Tabela.Idade)"
+                      "Name": "Sum(Pessoas.Idade)"
                     }
                   ],
                   "OrderBy": [
@@ -1156,7 +1090,7 @@
                             "Column": {
                               "Expression": {
                                 "SourceRef": {
-                                  "Source": "t"
+                                  "Source": "p"
                                 }
                               },
                               "Property": "Idade"
@@ -1279,8 +1213,8 @@
                       "Version": 2,
                       "From": [
                         {
-                          "Name": "t",
-                          "Entity": "Tabela"
+                          "Name": "p",
+                          "Entity": "Pessoas"
                         }
                       ],
                       "Select": [
@@ -1288,12 +1222,12 @@
                           "Column": {
                             "Expression": {
                               "SourceRef": {
-                                "Source": "t"
+                                "Source": "p"
                               }
                             },
                             "Property": "Nome"
                           },
-                          "Name": "Tabela.Nome"
+                          "Name": "Pessoas.Nome"
                         },
                         {
                           "Aggregation": {
@@ -1301,7 +1235,7 @@
                               "Column": {
                                 "Expression": {
                                   "SourceRef": {
-                                    "Source": "t"
+                                    "Source": "p"
                                   }
                                 },
                                 "Property": "Idade"
@@ -1309,7 +1243,7 @@
                             },
                             "Function": 0
                           },
-                          "Name": "Sum(Tabela.Idade)"
+                          "Name": "Sum(Pessoas.Idade)"
                         }
                       ],
                       "OrderBy": [
@@ -1321,7 +1255,7 @@
                                 "Column": {
                                   "Expression": {
                                     "SourceRef": {
-                                      "Source": "t"
+                                      "Source": "p"
                                     }
                                   },
                                   "Property": "Idade"
@@ -1410,7 +1344,7 @@
               "projectionActiveItems": {
                 "Category": [
                   {
-                    "queryRef": "Tabela.Nome",
+                    "queryRef": "Pessoas.Nome",
                     "suppressConcat": false
                   }
                 ]
@@ -1419,12 +1353,12 @@
                 "Select": [
                   {
                     "Restatement": "Nome",
-                    "Name": "Tabela.Nome",
+                    "Name": "Pessoas.Nome",
                     "Type": 2048
                   },
                   {
                     "Restatement": "Idade",
-                    "Name": "Sum(Tabela.Idade)",
+                    "Name": "Sum(Pessoas.Idade)",
                     "Type": 3,
                     "Format": "0"
                   }
@@ -1449,7 +1383,7 @@
               "selects": [
                 {
                   "displayName": "Nome",
-                  "queryName": "Tabela.Nome",
+                  "queryName": "Pessoas.Nome",
                   "roles": {
                     "Category": true
                   },
@@ -1461,7 +1395,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "Tabela"
+                          "Entity": "Pessoas"
                         }
                       },
                       "Property": "Nome"
@@ -1471,7 +1405,7 @@
                 {
                   "displayName": "Idade",
                   "format": "0",
-                  "queryName": "Sum(Tabela.Idade)",
+                  "queryName": "Sum(Pessoas.Idade)",
                   "roles": {
                     "Y": true
                   },
@@ -1487,7 +1421,7 @@
                         "Column": {
                           "Expression": {
                             "SourceRef": {
-                              "Entity": "Tabela"
+                              "Entity": "Pessoas"
                             }
                           },
                           "Property": "Idade"
@@ -1527,7 +1461,7 @@
                 "projections": {
                   "Values": [
                     {
-                      "queryRef": "Tabela.Nome",
+                      "queryRef": "Pessoas.Nome",
                       "active": true
                     }
                   ]
@@ -1536,8 +1470,8 @@
                   "Version": 2,
                   "From": [
                     {
-                      "Name": "t",
-                      "Entity": "Tabela"
+                      "Name": "p",
+                      "Entity": "Pessoas"
                     }
                   ],
                   "Select": [
@@ -1545,12 +1479,12 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Source": "t"
+                            "Source": "p"
                           }
                         },
                         "Property": "Nome"
                       },
-                      "Name": "Tabela.Nome"
+                      "Name": "Pessoas.Nome"
                     }
                   ]
                 },
@@ -1670,8 +1604,8 @@
                       "Version": 2,
                       "From": [
                         {
-                          "Name": "t",
-                          "Entity": "Tabela"
+                          "Name": "p",
+                          "Entity": "Pessoas"
                         }
                       ],
                       "Select": [
@@ -1679,12 +1613,12 @@
                           "Column": {
                             "Expression": {
                               "SourceRef": {
-                                "Source": "t"
+                                "Source": "p"
                               }
                             },
                             "Property": "Nome"
                           },
-                          "Name": "Tabela.Nome"
+                          "Name": "Pessoas.Nome"
                         }
                       ]
                     },
@@ -1768,7 +1702,7 @@
               "projectionActiveItems": {
                 "Values": [
                   {
-                    "queryRef": "Tabela.Nome",
+                    "queryRef": "Pessoas.Nome",
                     "suppressConcat": false
                   }
                 ]
@@ -1777,7 +1711,7 @@
                 "Select": [
                   {
                     "Restatement": "Nome",
-                    "Name": "Tabela.Nome",
+                    "Name": "Pessoas.Nome",
                     "Type": 2048
                   }
                 ]
@@ -1796,7 +1730,7 @@
               "selects": [
                 {
                   "displayName": "Nome",
-                  "queryName": "Tabela.Nome",
+                  "queryName": "Pessoas.Nome",
                   "roles": {
                     "Values": true
                   },
@@ -1808,7 +1742,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "Tabela"
+                          "Entity": "Pessoas"
                         }
                       },
                       "Property": "Nome"
@@ -1845,13 +1779,13 @@
                 "projections": {
                   "Group": [
                     {
-                      "queryRef": "Tabela.Nome",
+                      "queryRef": "Pessoas.Nome",
                       "active": true
                     }
                   ],
                   "Values": [
                     {
-                      "queryRef": "Sum(Tabela.Idade)"
+                      "queryRef": "Sum(Pessoas.Idade)"
                     }
                   ]
                 },
@@ -1859,8 +1793,8 @@
                   "Version": 2,
                   "From": [
                     {
-                      "Name": "t",
-                      "Entity": "Tabela"
+                      "Name": "p",
+                      "Entity": "Pessoas"
                     }
                   ],
                   "Select": [
@@ -1868,12 +1802,12 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Source": "t"
+                            "Source": "p"
                           }
                         },
                         "Property": "Nome"
                       },
-                      "Name": "Tabela.Nome"
+                      "Name": "Pessoas.Nome"
                     },
                     {
                       "Aggregation": {
@@ -1881,7 +1815,7 @@
                           "Column": {
                             "Expression": {
                               "SourceRef": {
-                                "Source": "t"
+                                "Source": "p"
                               }
                             },
                             "Property": "Idade"
@@ -1889,7 +1823,7 @@
                         },
                         "Function": 0
                       },
-                      "Name": "Sum(Tabela.Idade)"
+                      "Name": "Sum(Pessoas.Idade)"
                     }
                   ]
                 },
@@ -1924,8 +1858,8 @@
                       "Version": 2,
                       "From": [
                         {
-                          "Name": "t",
-                          "Entity": "Tabela"
+                          "Name": "p",
+                          "Entity": "Pessoas"
                         }
                       ],
                       "Select": [
@@ -1933,12 +1867,12 @@
                           "Column": {
                             "Expression": {
                               "SourceRef": {
-                                "Source": "t"
+                                "Source": "p"
                               }
                             },
                             "Property": "Nome"
                           },
-                          "Name": "Tabela.Nome"
+                          "Name": "Pessoas.Nome"
                         },
                         {
                           "Aggregation": {
@@ -1946,7 +1880,7 @@
                               "Column": {
                                 "Expression": {
                                   "SourceRef": {
-                                    "Source": "t"
+                                    "Source": "p"
                                   }
                                 },
                                 "Property": "Idade"
@@ -1954,7 +1888,7 @@
                             },
                             "Function": 0
                           },
-                          "Name": "Sum(Tabela.Idade)"
+                          "Name": "Sum(Pessoas.Idade)"
                         }
                       ],
                       "OrderBy": [
@@ -1966,7 +1900,7 @@
                                 "Column": {
                                   "Expression": {
                                     "SourceRef": {
-                                      "Source": "t"
+                                      "Source": "p"
                                     }
                                   },
                                   "Property": "Idade"
@@ -2030,7 +1964,7 @@
               "projectionActiveItems": {
                 "Group": [
                   {
-                    "queryRef": "Tabela.Nome",
+                    "queryRef": "Pessoas.Nome",
                     "suppressConcat": false
                   }
                 ]
@@ -2039,12 +1973,12 @@
                 "Select": [
                   {
                     "Restatement": "Nome",
-                    "Name": "Tabela.Nome",
+                    "Name": "Pessoas.Nome",
                     "Type": 2048
                   },
                   {
                     "Restatement": "Idade",
-                    "Name": "Sum(Tabela.Idade)",
+                    "Name": "Sum(Pessoas.Idade)",
                     "Type": 3,
                     "Format": "0"
                   }
@@ -2069,7 +2003,7 @@
               "selects": [
                 {
                   "displayName": "Nome",
-                  "queryName": "Tabela.Nome",
+                  "queryName": "Pessoas.Nome",
                   "roles": {
                     "Group": true
                   },
@@ -2081,7 +2015,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "Tabela"
+                          "Entity": "Pessoas"
                         }
                       },
                       "Property": "Nome"
@@ -2091,7 +2025,7 @@
                 {
                   "displayName": "Idade",
                   "format": "0",
-                  "queryName": "Sum(Tabela.Idade)",
+                  "queryName": "Sum(Pessoas.Idade)",
                   "roles": {
                     "Values": true
                   },
@@ -2107,7 +2041,7 @@
                         "Column": {
                           "Expression": {
                             "SourceRef": {
-                              "Entity": "Tabela"
+                              "Entity": "Pessoas"
                             }
                           },
                           "Property": "Idade"

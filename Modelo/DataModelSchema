@@ -1,161 +1,23 @@
 {
-  "name": "e2e4a4ed-3b84-4c3c-a7a9-7fedcf528618",
+  "name": "c2ba6f71-e8e3-45e6-b0e8-5d3ae57c5996",
   "compatibilityLevel": 1465,
   "createdTimestamp": "2020-07-09T11:21:59.763333-03:00",
-  "lastUpdate": "2020-07-09T12:00:44.526667-03:00",
+  "lastUpdate": "2020-07-09T12:22:34.68-03:00",
   "lastSchemaUpdate": "2020-07-09T11:21:59.763333-03:00",
-  "lastProcessed": "2020-07-09T11:23:09.743333-03:00",
+  "lastProcessed": "2020-07-09T12:20:30.67-03:00",
   "model": {
     "culture": "pt-BR",
     "modifiedTime": "2020-07-09T14:21:59.81",
-    "structureModifiedTime": "2020-07-09T14:23:07.133333",
+    "structureModifiedTime": "2020-07-09T15:20:27.33",
     "dataSources": [
       {
-        "name": "b269b13c-d7f0-417c-ada3-ce04d74e8662",
-        "connectionString": "provider=Microsoft.PowerBI.OleDb;global pipe=b89a2467-dd85-45bd-b1d4-cba1a22245d1;mashup=\"UEsDBBQAAgAIAONa6VDjUbPqqwAAAPsAAAASABwAQ29uZmlnL1BhY2thZ2UueG1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIWPwQqCQBRFf0Vm7xtHUSZ5jlDbhCiItqKTDukoOjb+W4s+qV8oKKNdu3sPZ3Hv43bHdG4b5yqHUXU6IQw84khddKXSVUImc3Y5SQXu8uKSV9J5yXqM57FMSG1MH1NqrQUbQDdU1Pc8Rk/Z9lDUss3JV1b/ZVfp0eS6kETg8T1G+MB9CHnIgbGIIV04ZkovmUEIgb+KwEP6g3EzNWYapOiNu94jXSrSzxHxBFBLAwQUAAIACADjWulQD8rpq6QAAADpAAAAEwAcAFtDb250ZW50X1R5cGVzXS54bWwgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAbY5LDsIwDESvEnmfurBACDVlAdyAC0TB/Yjmo8ZF4WwsOBJXIG13iKVn5nnm83pXx2QH8aAx9t4p2BQlCHLG33rXKpi4kXs41tX1GSiKHHVRQcccDojRdGR1LHwgl53Gj1ZzPscWgzZ33RJuy3KHxjsmx5LnH1BXZ2r0NLC4pCyvtRkHcVpzc5UCpsS4yPiXsD95HcLQG83ZxCRtlHYhcRlefwFQSwMEFAACAAgA41rpUKifX1TAAQAA/QIAABMAHABGb3JtdWxhcy9TZWN0aW9uMS5tIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAG1SW2/aMBR+R+I/WNlLIkVZUVlFVe2BcpE6BNMggDZUVV5y6Nw6NrJP2gbEf99xHKg21S9JPvt8t9hChkIrtvDPzk271W7ZP9xAzlL+GyRnX5kEbLcYrbFWCATQjoRkbHQx1682/Ga1SoY6KwtQGN4KxU2VDCHTxc6AtSfEnU/hDcNAdL+sB9baanG9uJCjairXk85Puc6er6cTu5vul88jsRL9+a+3/fJpli71uDe6sK+X+56cVtnnYe/xcrbik6cfy34QM88/UpnOhXpMbrmFq24Us0FjQDh7sJUcISKY4rAHpBhhiNUOmCqldIEYkrmIFYCcbRZgBJdiD3niPNNpNCXcR0woVk9hPbKZ6cI18oAxu8t57t/vo9gX9ilIxU6zvkQwPNfBubvUcGW32hQDLctCpcRow7re+HAIHCnl8jqkfozZIajpCb1TeNVN3MTxeNLpl6jnUOgXyD2h7ZCU3zv/Pbfwn7+34rKE8H+TMdtQW7yU6LlmvI4Y+PsQnMO5ZbzomdWbaDyEVIqHG+D71tl28OG9wyanofti8uZDCovHKPI6Qr3rfdieM2jDxgpJUmPJQAJXRHAa/qChm79QSwECLQAUAAIACADjWulQ41Gz6qsAAAD7AAAAEgAAAAAAAAAAAAAAAAAAAAAAQ29uZmlnL1BhY2thZ2UueG1sUEsBAi0AFAACAAgA41rpUA/K6aukAAAA6QAAABMAAAAAAAAAAAAAAAAA9wAAAFtDb250ZW50X1R5cGVzXS54bWxQSwECLQAUAAIACADjWulQqJ9fVMABAAD9AgAAEwAAAAAAAAAAAAAAAADoAQAARm9ybXVsYXMvU2VjdGlvbjEubVBLBQYAAAAAAwADAMIAAAD1AwAAAAA=\";location=Tabela",
+        "name": "300619aa-1fac-4e3f-8b23-bc0f4fbc7244",
+        "connectionString": "provider=Microsoft.PowerBI.OleDb;global pipe=50c55a10-f5c9-4b3d-be39-fdf9669a7fa4;mashup=UEsDBBQAAgAIAI1i6VDjUbPqqwAAAPsAAAASABwAQ29uZmlnL1BhY2thZ2UueG1sIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAIWPwQqCQBRFf0Vm7xtHUSZ5jlDbhCiItqKTDukoOjb+W4s+qV8oKKNdu3sPZ3Hv43bHdG4b5yqHUXU6IQw84khddKXSVUImc3Y5SQXu8uKSV9J5yXqM57FMSG1MH1NqrQUbQDdU1Pc8Rk/Z9lDUss3JV1b/ZVfp0eS6kETg8T1G+MB9CHnIgbGIIV04ZkovmUEIgb+KwEP6g3EzNWYapOiNu94jXSrSzxHxBFBLAwQUAAIACACNYulQD8rpq6QAAADpAAAAEwAcAFtDb250ZW50X1R5cGVzXS54bWwgohgAKKAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAbY5LDsIwDESvEnmfurBACDVlAdyAC0TB/Yjmo8ZF4WwsOBJXIG13iKVn5nnm83pXx2QH8aAx9t4p2BQlCHLG33rXKpi4kXs41tX1GSiKHHVRQcccDojRdGR1LHwgl53Gj1ZzPscWgzZ33RJuy3KHxjsmx5LnH1BXZ2r0NLC4pCyvtRkHcVpzc5UCpsS4yPiXsD95HcLQG83ZxCRtlHYhcRlefwFQSwMEFAACAAgAjWLpUPFQkpgQAQAA1wEAABMAHABGb3JtdWxhcy9TZWN0aW9uMS5tIKIYACigFAAAAAAAAAAAAAAAAAAAAAAAAAAAAG2QwWuDMBTG74L/Q8hJwcpk7FQ8dHUFoWxlyi5SStQnFRKzJc+xUfq/LzZp7WHvkuR7eb/vSzQ02MuBFHZNlr7ne/rIFLRkB1pLpklKOKDvEVMbOSAYofjiccaQ1UxDQLOX7XaRJ0+L1eNDQSNCy6I87J5zGkZ2rK3lYaZdIKeqaI4gWEpNk0Y5gkipu0P352qi7934akT5DkJ+Q7uWfBSDTgzG9m7RpkIjl6zmEG+UFB+MjxDceUekyqBjI0eLeWViesxse807lbKGN6IN4PwDjJzshLeu/P2EST6h2RCcmhG57BU0UrXuwHuN5zC0Pv0w+1lcqdigO6nEnFAHLoqxhB+M1xzYYADX4X9+Z/kHUEsBAi0AFAACAAgAjWLpUONRs+qrAAAA+wAAABIAAAAAAAAAAAAAAAAAAAAAAENvbmZpZy9QYWNrYWdlLnhtbFBLAQItABQAAgAIAI1i6VAPyumrpAAAAOkAAAATAAAAAAAAAAAAAAAAAPcAAABbQ29udGVudF9UeXBlc10ueG1sUEsBAi0AFAACAAgAjWLpUPFQkpgQAQAA1wEAABMAAAAAAAAAAAAAAAAA6AEAAEZvcm11bGFzL1NlY3Rpb24xLm1QSwUGAAAAAAMAAwDCAAAARQMAAAAA;location=Pessoas",
         "impersonationMode": "impersonateCurrentUser",
-        "modifiedTime": "2020-07-09T15:00:45.153333"
+        "modifiedTime": "2020-07-09T15:22:35.37"
       }
     ],
     "tables": [
-      {
-        "name": "Tabela",
-        "modifiedTime": "2020-07-09T14:23:07.133333",
-        "structureModifiedTime": "2020-07-09T14:23:07.926667",
-        "columns": [
-          {
-            "type": "rowNumber",
-            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
-            "dataType": "int64",
-            "isHidden": true,
-            "isUnique": true,
-            "isKey": true,
-            "isNullable": false,
-            "modifiedTime": "2020-07-09T14:23:07.133333",
-            "structureModifiedTime": "2020-07-09T14:23:07.133333",
-            "refreshedTime": "1699-12-31T00:00:00",
-            "attributeHierarchy": {
-              "state": "ready",
-              "modifiedTime": "2020-07-09T14:23:09.786667",
-              "refreshedTime": "2020-07-09T14:23:09.786667"
-            }
-          },
-          {
-            "name": "Nome",
-            "dataType": "string",
-            "sourceColumn": "Nome",
-            "summarizeBy": "none",
-            "modifiedTime": "2020-07-09T14:23:07.926667",
-            "structureModifiedTime": "2020-07-09T14:23:07.926667",
-            "refreshedTime": "1699-12-31T00:00:00",
-            "attributeHierarchy": {
-              "state": "ready",
-              "modifiedTime": "2020-07-09T14:23:09.786667",
-              "refreshedTime": "2020-07-09T14:23:09.786667"
-            },
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic",
-                "modifiedTime": "2020-07-09T14:23:07.926667"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"Text\" />",
-                "modifiedTime": "2020-07-09T14:23:07.926667"
-              },
-              {
-                "name": "DataTypeAtRefresh",
-                "value": "String#####not a type",
-                "modifiedTime": "2020-07-09T14:23:07.956667"
-              },
-              {
-                "name": "PBI_NameAtRefresh",
-                "value": "Nome",
-                "modifiedTime": "2020-07-09T14:23:07.956667"
-              },
-              {
-                "name": "PBI_WasHiddenAtRefresh",
-                "value": "False",
-                "modifiedTime": "2020-07-09T14:23:07.956667"
-              }
-            ]
-          },
-          {
-            "name": "Idade",
-            "dataType": "int64",
-            "sourceColumn": "Idade",
-            "formatString": "0",
-            "summarizeBy": "sum",
-            "modifiedTime": "2020-07-09T14:23:07.926667",
-            "structureModifiedTime": "2020-07-09T14:23:07.926667",
-            "refreshedTime": "1699-12-31T00:00:00",
-            "attributeHierarchy": {
-              "state": "ready",
-              "modifiedTime": "2020-07-09T14:23:09.786667",
-              "refreshedTime": "2020-07-09T14:23:09.786667"
-            },
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic",
-                "modifiedTime": "2020-07-09T14:23:07.926667"
-              },
-              {
-                "name": "Format",
-                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />",
-                "modifiedTime": "2020-07-09T14:23:07.926667"
-              },
-              {
-                "name": "DataTypeAtRefresh",
-                "value": "Int64#####not a type",
-                "modifiedTime": "2020-07-09T14:23:07.956667"
-              },
-              {
-                "name": "PBI_NameAtRefresh",
-                "value": "Idade",
-                "modifiedTime": "2020-07-09T14:23:07.956667"
-              },
-              {
-                "name": "PBI_WasHiddenAtRefresh",
-                "value": "False",
-                "modifiedTime": "2020-07-09T14:23:07.956667"
-              }
-            ]
-          }
-        ],
-        "partitions": [
-          {
-            "name": "Tabela-f6dacf06-e926-4776-8c4f-9508656a9853",
-            "mode": "import",
-            "state": "ready",
-            "modifiedTime": "2020-07-09T14:23:09.743333",
-            "refreshedTime": "2020-07-09T14:23:09.743333",
-            "source": {
-              "type": "query",
-              "query": "SELECT * FROM [Tabela]",
-              "dataSource": "b269b13c-d7f0-417c-ada3-ce04d74e8662"
-            }
-          }
-        ],
-        "annotations": [
-          {
-            "name": "PBI_Id",
-            "value": "878d7d02-45fc-4a3e-a821-a089c832bede",
-            "modifiedTime": "2020-07-09T14:23:07.956667"
-          },
-          {
-            "name": "LinkedQueryName",
-            "value": "Tabela",
-            "modifiedTime": "2020-07-09T14:23:07.956667"
-          },
-          {
-            "name": "PBI_ResultType",
-            "value": "Table",
-            "modifiedTime": "2020-07-09T14:23:07.956667"
-          }
-        ]
-      },
       {
         "name": "DateTableTemplate_c1ec5e53-20a2-4e17-adeb-e2fcc5adf492",
         "isHidden": true,
@@ -494,6 +356,190 @@
             "name": "DefaultItem",
             "value": "DateHierarchy",
             "modifiedTime": "2020-07-09T14:23:07.133333"
+          }
+        ]
+      },
+      {
+        "name": "Pessoas",
+        "modifiedTime": "2020-07-09T15:20:27.33",
+        "structureModifiedTime": "2020-07-09T15:20:27.33",
+        "columns": [
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isKey": true,
+            "isNullable": false,
+            "modifiedTime": "2020-07-09T15:20:27.33",
+            "structureModifiedTime": "2020-07-09T15:20:27.33",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2020-07-09T15:20:30.716667",
+              "refreshedTime": "2020-07-09T15:20:30.716667"
+            }
+          },
+          {
+            "name": "ID",
+            "dataType": "string",
+            "sourceColumn": "ID",
+            "summarizeBy": "none",
+            "modifiedTime": "2020-07-09T15:20:27.33",
+            "structureModifiedTime": "2020-07-09T15:20:27.33",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2020-07-09T15:20:30.716667",
+              "refreshedTime": "2020-07-09T15:20:30.716667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2020-07-09T15:20:27.33"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />",
+                "modifiedTime": "2020-07-09T15:20:27.33"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type",
+                "modifiedTime": "2020-07-09T15:20:28.063333"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ID",
+                "modifiedTime": "2020-07-09T15:20:28.063333"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False",
+                "modifiedTime": "2020-07-09T15:20:28.063333"
+              }
+            ]
+          },
+          {
+            "name": "Nome",
+            "dataType": "string",
+            "sourceColumn": "Nome",
+            "summarizeBy": "none",
+            "modifiedTime": "2020-07-09T15:20:27.33",
+            "structureModifiedTime": "2020-07-09T15:20:27.33",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2020-07-09T15:20:30.716667",
+              "refreshedTime": "2020-07-09T15:20:30.716667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2020-07-09T15:20:27.33"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />",
+                "modifiedTime": "2020-07-09T15:20:27.33"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type",
+                "modifiedTime": "2020-07-09T15:20:28.063333"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Nome",
+                "modifiedTime": "2020-07-09T15:20:28.063333"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False",
+                "modifiedTime": "2020-07-09T15:20:28.063333"
+              }
+            ]
+          },
+          {
+            "name": "Idade",
+            "dataType": "int64",
+            "sourceColumn": "Idade",
+            "formatString": "0",
+            "summarizeBy": "sum",
+            "modifiedTime": "2020-07-09T15:20:27.33",
+            "structureModifiedTime": "2020-07-09T15:20:27.33",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2020-07-09T15:20:30.716667",
+              "refreshedTime": "2020-07-09T15:20:30.716667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2020-07-09T15:20:27.33"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />",
+                "modifiedTime": "2020-07-09T15:20:27.33"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type",
+                "modifiedTime": "2020-07-09T15:20:28.063333"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Idade",
+                "modifiedTime": "2020-07-09T15:20:28.063333"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False",
+                "modifiedTime": "2020-07-09T15:20:28.063333"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Pessoas-d9993817-4a80-4dc7-90d0-d475b4f3d0cb",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2020-07-09T15:20:30.67",
+            "refreshedTime": "2020-07-09T15:20:30.67",
+            "source": {
+              "type": "query",
+              "query": "SELECT * FROM [Pessoas]",
+              "dataSource": "300619aa-1fac-4e3f-8b23-bc0f4fbc7244"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "01a66c7a-f844-47a3-9ce6-6f9e74ba8a85",
+            "modifiedTime": "2020-07-09T15:20:28.063333"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "Pessoas",
+            "modifiedTime": "2020-07-09T15:20:28.063333"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação",
+            "modifiedTime": "2020-07-09T15:20:28.063333"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table",
+            "modifiedTime": "2020-07-09T15:20:28.063333"
           }
         ]
       }
